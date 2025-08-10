@@ -21,7 +21,7 @@ export const ProductClassesProvider = ({ children }) => {
     const fetchCategories = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8080/api/v1/token/category/get",
+          "https://server-gamma-tawny.vercel.app/api/v1/token/category/get",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
